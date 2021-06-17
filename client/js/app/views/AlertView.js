@@ -1,4 +1,4 @@
-class MessageView extends View {
+class AlertView extends View {
   constructor(element) {
     super(element);
   }

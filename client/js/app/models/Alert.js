@@ -1,4 +1,4 @@
-class Message {
+class Alert {
   constructor(message) {
     this._message = message || '';
   }

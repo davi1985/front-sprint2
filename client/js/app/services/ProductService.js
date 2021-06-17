@@ -4,6 +4,11 @@ class ProductService {
   }
 
   allProducts() {
-    // TODO: implementar
+    return this._http.get('http://localhost:3000/products').then((products) => {
+      return products.map(
+        (product) =>
+          new Product(product.image, product.description, product.price)
+      );
+    });
   }
 }
